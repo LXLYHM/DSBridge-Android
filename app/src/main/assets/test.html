@@ -42,7 +42,7 @@
            //dsbridge初始化化代码
             window._dsbridge&&_dsbridge.init();
 
-        console.log(dsBridge)
+        //console.log(dsBridge)
 
         function callSyn() {
            alert(dsBridge.call("testSyn", {msg: "testSyn"}))
@@ -88,9 +88,11 @@
             return arg1+arg2;
         }
 
-        dsBridge.register('addValue',function(r,l){
-         return r+l;
-        })
+       function initBridge(){
+            dsBridge.register('addValue',function(r,l){
+                   return r+l;
+            })
+         }
 
         </script>
 </body>
