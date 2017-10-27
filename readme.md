@@ -10,6 +10,9 @@ DSBridge-Android:https://github.com/wendux/DSBridge-Android
 
 2.0更新列表：https://juejin.im/post/593fa055128fe1006aff700a
 
+修复部分设备上注入不成功，导致android 调用js 失败 bug
+fixed issues:https://github.com/wendux/DSBridge-Android/issues/18
+
 ## Download
 
 1. Add the JitPack repository to your build file
